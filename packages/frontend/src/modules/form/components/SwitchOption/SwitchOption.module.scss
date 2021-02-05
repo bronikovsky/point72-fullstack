@@ -1,0 +1,9 @@
+.root {
+  &:not(.checked) button > div {
+    opacity: 0.5;
+  }
+
+  input {
+    display: none;
+  }
+}

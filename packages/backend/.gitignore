@@ -1,0 +1,13 @@
+bin
+include
+lib
+lib64
+pyvenv.cfg
+*.pyc
+__pycache__
+share/python-wheels/
+.idea
+.vscode
+npm-debug.log
+scripts/dev/pids
+.env

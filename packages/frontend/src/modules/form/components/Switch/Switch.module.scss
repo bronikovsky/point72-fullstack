@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  border: 1px solid var(--border);
+
+  label {
+    flex: 1 0 auto;
+    border-right: 1px solid var(--border);
+    margin-right: -1px;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

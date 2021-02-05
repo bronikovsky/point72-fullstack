@@ -1,0 +1,14 @@
+FROM python:3-slim
+
+WORKDIR /package-root
+
+ENV BUILD_DEPS="gcc build-essential"
+
+RUN apt-get update && apt-get install -y --no-install-recommends libpq-dev $BUILD_DEPS
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+RUN apt-get purge -y $BUILD_DEPS && apt-get -y autoremove
+
+CMD [ "python", "/package-root/src/main.py" ]

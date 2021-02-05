@@ -1,0 +1,15 @@
+@import '../../../ui/styles';
+
+.root {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  border-radius: 8px;
+  background-color: var(--background) !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  color: var(--text-primary) !important;
+
+  @include breakpoint(tablet) {
+    display: none;
+  }
+}

@@ -1,0 +1,82 @@
+.root {
+
+  &.body {
+    font-size: 1rem;
+    color: var(--text-primary);
+
+    b {
+      font-weight: 600;
+    }
+  }
+
+  &.heading {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+  &.subheading {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  &.overline {
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    line-height: 0.75rem;
+  }
+
+  &.button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.02rem;
+  }
+
+  &.default {
+    color: var(--text-primary);
+  }
+
+  &.error {
+    color: var(--error);
+  }
+
+  &.primary {
+    color: var(--primary);
+  }
+
+  &.success {
+    color: var(--success);
+  }
+
+  &.lighter {
+    color: var(--text-secondary);
+  }
+
+  ul {
+    padding-left: 16px;
+    color: inherit;
+
+    li {
+      position: relative;
+      color: inherit;
+
+      &::before {
+        content: '-';
+        width: 16px;
+        opacity: 0.6;
+        left: -16px;
+        color: inherit;;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+}

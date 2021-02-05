@@ -1,0 +1,15 @@
+@import '../../styles';
+
+.root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  padding: (48px + 2 * $layout-padding)  $layout-padding $layout-padding $layout-padding;
+
+  main {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

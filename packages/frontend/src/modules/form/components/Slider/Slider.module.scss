@@ -1,0 +1,21 @@
+@import '../../styles';
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  background-color: var(--input-background);
+  padding: 0 16px;
+
+  .label {
+    color: var(--text-primary);
+    padding-right: 16px;
+    transition: all 0.3s;
+    left: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  @include input-border;
+}

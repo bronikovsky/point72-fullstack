@@ -1,0 +1,21 @@
+.root {
+  transition: opacity 0.3s;
+  opacity: 1;
+  font-size: 0;
+  height: 48px;
+  width: 48px;
+  flex: 0 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  svg {
+    fill: var(--text-primary);
+    height: 50%;
+    width: 50%;
+  }
+}

@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  backend:
+    build:
+      context: ./packages/backend
+      dockerfile: Dockerfile-dev
+    env_file: ./packages/backend/.env.development
+    volumes:
+      - "./packages/backend/src:/package-root/src"
+    ports:
+      - "${POINT72_API_PORT:-5000}:8000"
+  database:
+    image: postgres:13-alpine
+    environment:
+      - POSTGRES_USER=point72
+      - POSTGRES_DB=point72
+      - POSTGRES_PASSWORD=point72
+    ports:
+      - "5432:5432"
+  frontend:
+    build:
+      context: ./packages/frontend
+      dockerfile: Dockerfile-dev
+    env_file: ./packages/backend/.env.development
+    volumes:
+      - "./packages/frontend/src:/package-root/src"
+    ports:
+      - "${POINT72_FE_PORT:-3000}:3000"

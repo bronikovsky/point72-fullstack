@@ -1,0 +1,47 @@
+.button {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  transition: border-color 0.3s;
+  border-radius: 8px;
+  min-width: 200px;
+  padding: 0 12px;
+  justify-content: space-between;
+
+  &:hover, &.open {
+    border-color: var(--border);
+  }
+
+  svg {
+    box-sizing: content-box;
+    color: var(--text-secondary);
+  }
+}
+
+.dropdown {
+  position: fixed;
+  background-color: var(--background);
+  display: none;
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 8px 0;
+
+  &.open {
+    display: block;
+  }
+
+  .item {
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+
+    &:hover {
+      background-color: var(--background-lighter);
+    }
+  }
+}

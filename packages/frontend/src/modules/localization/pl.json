@@ -1,0 +1,86 @@
+{
+  "form": {
+    "errors": {
+      "server_error": "There was an error communicating with the server. Please try gain or contact support."
+    },
+    "email": {
+      "label": "Email",
+      "errors": {
+        "taken": "Already taken",
+        "invalid_format": "Invalid format"
+      }
+    },
+    "accountType": {
+      "options": {
+        "admin": "Admin",
+        "regular": "Regular"
+      }
+    },
+    "firstName": {
+      "label": "First name"
+    },
+    "search": {
+      "label": "Search"
+    },
+    "lastName": {
+      "label": "Last name"
+    },
+    "age": {
+      "label": "Age",
+      "errors": {
+        "must_be_number": "Must be a number",
+        "must_be_in_range": "Must be between 1 and 120"
+      }
+    },
+    "password": {
+      "label": "Password",
+      "errors": {
+        "too_short": "Min. 8 characters"
+      }
+    },
+    "passwordConfirm": {
+      "label": "Confirm password",
+      "errors": {
+        "must_match": "Passwords must match"
+      }
+    },
+    "login": {
+      "submit": "Sign in",
+      "errors": {
+        "invalid_credentials": "The provided credentials are invalid"
+      }
+    },
+    "register": {
+      "submit": "Sign up"
+    }
+  },
+  "actions": {
+    "delete": "Delete",
+    "select": "Select..."
+  },
+  "auth": {
+    "login": "Sign in",
+    "register": "Sign up",
+    "just_registered": "Account created successfully, you can now log in :)"
+  },
+  "header": {
+    "account": "Account",
+    "logout":  "Log out"
+  },
+  "account": {
+    "heading": "Account",
+    "users": "Users",
+    "admin": "ADMIN",
+    "regular": "REGULAR",
+    "fetch_more": "Fetch more",
+    "email": "Email:",
+    "age": "Age:",
+    "country": "Country:",
+    "results": "Showing {count} out of {total}",
+    "no_results": "No results for current query"
+  },
+  "theme": {
+    "dark": "Dark theme",
+    "light": "Light theme"
+  }
+}

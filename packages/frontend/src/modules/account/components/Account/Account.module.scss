@@ -1,0 +1,51 @@
+@import '../../../ui/styles';
+
+.root {
+  section {
+    margin-bottom: 48px;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      & > div {
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--border);
+      }
+    }
+
+    .activity {
+      display: flex;
+      padding: 16px 0;
+      margin: 0 -8px;
+      flex-wrap: wrap;
+
+      & > div {
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        @include breakpoint(tablet) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+
+      &.error {
+        margin: 40px 0;
+        justify-content: center;
+      }
+    }
+
+    .fetchMore {
+      margin: 0 auto;
+    }
+
+    .noResults {
+      text-align: center;
+      width: 100%;
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
+      margin: 40px 0;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+FROM node:12-alpine
+
+WORKDIR /package-root
+
+COPY package.json .
+COPY public public
+COPY .eslintrc .
+COPY tsconfig.json .
+COPY yarn.lock .
+COPY .env.development .
+
+RUN yarn install
+
+CMD [ "yarn", "start" ]

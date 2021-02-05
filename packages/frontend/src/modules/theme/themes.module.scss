@@ -1,0 +1,45 @@
+:root {
+  --primary: hsl(207, 54%, 51%);
+  --primary-lighter: hsl(207, 54%, 59%);
+  --error: hsl(350, 72%, 55%);
+  --error-lighter: hsl(350, 72%, 64%);
+  --success: hsl(137, 35%, 48%);
+  --primary-transparent: #28483D;
+  --error-transparent: #65343C;
+  --warning: #FFD25A;
+}
+
+.lightTheme, .darkTheme {
+  --lighter-gray: #eeeeee;
+  --light-gray: #dddddd;
+  --gray: #cccccc;
+  --dark-gray: #bbbbbb;
+  --darker-gray: #333333;
+
+
+  --text-secondary: #5f6368;
+  --text-button: hsl(0, 0%, 100%);
+
+  --input-placeholder: var(--text-secondary);
+  --input-background: var(--background-lighter);
+}
+
+.lightTheme {
+  --text-primary: hsl(0, 0%, 100%);
+  --text-secondary: hsl(213, 5%, 60%);
+  --background: hsl(210, 31%, 10%);
+  --background-lighter: hsl(210, 31%, 14%);
+  --border: hsl(210, 31%, 20%);
+  --border-lighter: hsl(210, 31%, 40%);
+  --text-button-disabled: hsl(210, 31%, 25%);
+}
+
+.darkTheme {
+  --text-primary: hsl(0, 0%, 4%);
+  --text-secondary: hsl(213, 5%, 40%);
+  --background: hsl(210, 31%, 100%);
+  --background-lighter: hsl(210, 31%, 94%);
+  --border: hsl(210, 31%, 72%);
+  --border-lighter: hsl(210, 31%, 50%);
+  --text-button-disabled: hsl(210, 31%, 25%);
+}

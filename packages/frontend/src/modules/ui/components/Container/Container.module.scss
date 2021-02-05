@@ -1,0 +1,17 @@
+@import '../../styles';
+
+.root {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  width: $breakpoint-desktop;
+  margin: 0 auto;
+
+  &.topPadding {
+    padding-top: 32px;
+  }
+
+  @include breakpoint(desktop) {
+    width: 100%;
+  }
+}

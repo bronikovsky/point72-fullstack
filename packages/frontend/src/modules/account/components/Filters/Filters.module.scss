@@ -1,0 +1,17 @@
+.root {
+  min-height: 40px;
+  margin-top: 16px;
+  display: flex;
+
+  & > div:not(:last-child) {
+    border-right: none !important;
+  }
+
+  & > div:last-child {
+    flex: 0 0 20%;
+  }
+
+  .slider {
+    flex: 0 0 40%;
+  }
+}

@@ -1,0 +1,27 @@
+$layout-padding: 24px;
+$breakpoint-desktop: 1200px;
+
+$media_queries : (
+  mobile: 'screen and (max-width: 480px)',
+  tablet: 'screen and (max-width: 768px)',
+  desktop: 'screen and (max-width: #{$breakpoint-desktop})',
+);
+
+@mixin breakpoint($breakpoints) {
+  $conditions : ();
+  @each $breakpoint in $breakpoints {
+    $conditions: append($conditions, #{inspect(map-get($media_queries, $breakpoint))}, comma);
+  }
+
+  @media #{$conditions} {
+    @content;
+  }
+}
+
+@mixin text-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}

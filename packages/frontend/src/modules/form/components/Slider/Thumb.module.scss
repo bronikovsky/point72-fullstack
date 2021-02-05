@@ -1,0 +1,18 @@
+.root {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  top: -6px;
+  box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+
+  .tooltip {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    background-color: var(--background-lighter);
+    color: var(--text-primary);
+  }
+}

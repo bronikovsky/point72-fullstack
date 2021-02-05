@@ -1,0 +1,54 @@
+.react-select-container {
+  .react-select__control {
+    border: 1px solid var(--border);
+    border-radius: 0;
+    min-height: 56px;
+    outline: 0;
+    box-shadow: none;
+    background-color: var(--input-background);
+    padding: 0 8px 0 16px;
+
+    &:hover {
+      border-color: var(--border-lighter);
+    }
+
+    * {
+      font-family: inherit;
+      font-size: inherit;
+      color: var(--input-placeholder);
+    }
+
+    .react-select__indicator-separator {
+      display: none;
+    }
+
+    .react-select__value-container {
+      padding: 0;
+
+      &--has-value div {
+        color: var(--text-primary) !important;
+      }
+    }
+
+    .react-select__single-value {
+      margin: 0;
+    }
+
+  }
+
+  .react-select__menu {
+    border-radius: 0;
+    background-color: var(--input-background);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+
+    .react-select__option--is-focused {
+      background-color: var(--input-background);
+      opacity: 0.55;
+    }
+
+    .react-select__option--is-selected {
+      background-color: var(--primary);
+    }
+  }
+}
